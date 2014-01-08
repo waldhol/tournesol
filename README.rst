@@ -21,8 +21,6 @@ Standard Library.
 Bug reports, patches and suggestions welcome!
 Just open an `issue`_ or send a `pull request`_.
 
-.. _Tournesol: https://github.com/waldhol/tournesol
-
 .. _Twisted: http://twistedmatrix.com/
 .. _deferreds: http://twistedmatrix.com/documents/current/core/howto/defer.html
 
@@ -36,3 +34,29 @@ Just open an `issue`_ or send a `pull request`_.
 
 .. _issue: https://github.com/waldhol/tournesol/issues/new
 .. _pull request: https://github.com/waldhol/tournesol/compare/
+
+**Why does the world need yet another web framework?**
+
+Because I did not find a web framework that fits my needs.
+
+I need integration of HTTP and proprietary TCP and UDP servers in a single event
+loop so that thay can share state without an additional database connection.
+
+Tornado_ has excellent support for HTTP but does not excel in support for
+regular TCP or UDP servers.
+
+Twisted_ is the great grandfather of asynchronous frameworks and has all the
+bells and whistles one could hope for. But it does not excel in HTTP support.
+
+And both do not support `PEP 380`_ coroutines. And asynchronous programming
+without coroutines is a pain.
+
+And last but not least there is startup time and footprint. Big function
+makes big resource usage. Here at ``tournesol`` we will stay light.
+
+**Where does the funny name come from?**
+
+Tournesol_ is french for sunflower. A sunflower turns its head during the day
+and follows the sun. It turns like a tornado but does not make as much wind.
+
+.. _Tournesol: http://fr.wikipedia.org/wiki/Tournesol
