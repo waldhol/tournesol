@@ -35,7 +35,8 @@ Just open an `issue`_ or send a `pull request`_.
 .. _issue: https://github.com/waldhol/tournesol/issues/new
 .. _pull request: https://github.com/waldhol/tournesol/compare/
 
-**Why does the world need yet another web framework?**
+Why does the world need yet another web framework?
+--------------------------------------------------
 
 Because I did not find a web framework that fits my needs.
 
@@ -54,9 +55,11 @@ without coroutines is a pain.
 And last but not least there is startup time and footprint. Big function
 makes big resource usage. Here at ``tournesol`` we will stay light.
 
-**Where does the funny name come from?**
+Where does the funny name come from?
+------------------------------------
 
-Tournesol_ is french for sunflower. A sunflower turns its head during the day
-and follows the sun. It turns like a tornado but does not make as much wind.
+It seems to be convention to name asynchronous frameworks after something that
+turns and begins with T. Tournesol_ is french for sunflower. A sunflower turns
+its head during the day to follow the sun.
 
 .. _Tournesol: http://fr.wikipedia.org/wiki/Tournesol
